@@ -1,10 +1,40 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/ThemeToggle"
 import { Menu, X } from "lucide-react"
+import logoLong from "@/assets/logo-long.png"
+import logoLongDark from "@/assets/logo-long-dark.png"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [theme, setTheme] = useState<"light" | "dark">("light")
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null
+    if (savedTheme) {
+      setTheme(savedTheme)
+    } else {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+      setTheme(prefersDark ? "dark" : "light")
+    }
+
+    // Watch for theme changes by observing the document class
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          const isDark = document.documentElement.classList.contains('dark')
+          setTheme(isDark ? 'dark' : 'light')
+        }
+      })
+    })
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    })
+
+    return () => observer.disconnect()
+  }, [])
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -26,10 +56,11 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">N</span>
-            </div>
-            <span className="font-bold text-xl">NextHire</span>
+            <img 
+              src={theme === 'dark' ? logoLong : logoLongDark} 
+              alt="NextHire Logo" 
+              className="h-14 w-auto"
+            />
           </div>
         </div>
         

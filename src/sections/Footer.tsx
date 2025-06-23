@@ -1,7 +1,38 @@
 import { Github, Twitter, Linkedin, Mail } from "lucide-react"
+import { useState, useEffect } from "react"
+import icon from "@/assets/icon.png"
+import iconDark from "@/assets/icon-dark.png"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
+  const [theme, setTheme] = useState<"light" | "dark">("light")
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null
+    if (savedTheme) {
+      setTheme(savedTheme)
+    } else {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+      setTheme(prefersDark ? "dark" : "light")
+    }
+
+    // Watch for theme changes by observing the document class
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          const isDark = document.documentElement.classList.contains('dark')
+          setTheme(isDark ? 'dark' : 'light')
+        }
+      })
+    })
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    })
+
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <footer className="bg-background border-t">
@@ -10,9 +41,11 @@ export function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">N</span>
-              </div>
+              <img 
+                src={theme === 'dark' ? icon : iconDark} 
+                alt="NextHire Icon" 
+                className="h-8 w-8"
+              />
               <span className="font-bold text-xl">NextHire</span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
