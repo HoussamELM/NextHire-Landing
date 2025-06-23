@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="NextHire" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- SEO Meta Tags -->
+    <title>NextHire - Réussissez vos entretiens avec l'IA | Simulateur vocal & CV IA</title>
+    <meta name="description" content="NextHire combine agents vocaux IA et génération de CV intelligente pour booster votre carrière. Entraînez-vous avec Prepwise et créez des CV professionnels avec Google Gemini." />
+    <meta name="keywords" content="entretien d'embauche, simulation vocale, IA, CV, carrière, emploi, recrutement, NextHire, Prepwise" />
+    <meta name="author" content="NextHire" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nexthire.com/" />
+    <meta property="og:title" content="NextHire - Réussissez vos entretiens avec l'IA" />
+    <meta property="og:description" content="Entraînez-vous avec notre agent vocal IA et créez des CV professionnels avec Google Gemini." />
+    <meta property="og:image" content="https://nexthire.com/og-image.jpg" />
+    <meta property="og:site_name" content="NextHire" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nexthire.com/" />
+    <meta property="twitter:title" content="NextHire - Réussissez vos entretiens avec l'IA" />
+    <meta property="twitter:description" content="Entraînez-vous avec notre agent vocal IA et créez des CV professionnels avec Google Gemini." />
+    <meta property="twitter:image" content="https://nexthire.com/og-image.jpg" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="msapplication-TileColor" content="#3b82f6" />
+    
+    <!-- Security headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NextHire",
+      "url": "https://nexthire.com",
+      "logo": "https://nexthire.com/logo.png",
+      "description": "Plateforme innovante pour la préparation aux entretiens d'embauche et la création de CV avec l'IA",
+      "sameAs": [
+        "https://twitter.com/nexthire",
+        "https://linkedin.com/company/nexthire"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+33-1-XX-XX-XX-XX",
+        "contactType": "customer service",
+        "email": "contact@nexthire.com"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

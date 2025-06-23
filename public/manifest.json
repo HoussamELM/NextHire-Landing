@@ -1,0 +1,58 @@
+{
+  "name": "NextHire - Réussissez vos entretiens avec l'IA",
+  "short_name": "NextHire",
+  "description": "Plateforme innovante pour la préparation aux entretiens d'embauche et la création de CV avec l'IA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "categories": ["business", "productivity", "education"],
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Essayer AI Job InterviewPrep",
+      "short_name": "AI Job InterviewPrep",
+      "description": "Lancer une simulation d'entretien IA avancée",
+      "url": "https://nexthire-omega.vercel.app/",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Créer mon CV",
+      "short_name": "CV IA",
+      "description": "Générer un CV avec l'IA",
+      "url": "http://localhost:5173",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+} 
