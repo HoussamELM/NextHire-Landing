@@ -17,7 +17,7 @@ export function Footer() {
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
               NextHire révolutionne la préparation aux entretiens d'embauche et la création de CV 
-              grâce à l'intelligence artificielle de pointe.
+              pour vous aider à réussir votre carrière au Maroc et à l'international.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -90,7 +90,7 @@ export function Footer() {
             © {currentYear} NextHire. Tous droits réservés.
           </p>
           <p className="text-sm text-muted-foreground mt-2 md:mt-0">
-            Propulsé par Vapi & Google Gemini
+            Propulsé par des technologies avancées
           </p>
         </div>
       </div>

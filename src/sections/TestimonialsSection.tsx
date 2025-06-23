@@ -8,36 +8,36 @@ export function TestimonialsSection() {
 
   const testimonials = [
     {
-      name: "Marie Dubois",
+      name: "Amina Benali",
       role: "Développeuse Full-Stack",
-      company: "TechCorp",
-      content: "Grâce à AI Job InterviewPrep, j'ai pu m'entraîner pour mon entretien chez Google. Le feedback était incroyablement précis et j'ai décroché le poste ! L'agent vocal est si réaliste qu'on oublie qu'on parle à une IA.",
+      company: "TechCorp Maroc",
+      content: "J'ai utilisé AI Job InterviewPrep pour préparer mon entretien chez une startup de Casablanca. Les questions étaient très pertinentes et le feedback m'a vraiment aidée à améliorer mes réponses. J'ai décroché le poste !",
       rating: 5,
-      avatar: "MD"
+      avatar: "AB"
     },
     {
-      name: "Thomas Martin",
-      role: "Chef de Projet",
-      company: "InnovateLab",
-      content: "Le générateur de CV IA a créé un CV parfaitement adapté au poste que je visais. En 2 semaines, j'ai eu 3 entretiens ! La qualité est professionnelle et le processus est très simple.",
+      name: "Youssef El Amrani",
+      role: "Chef de Projet Digital",
+      company: "InnovateLab Rabat",
+      content: "Le générateur de CV IA a créé un CV parfaitement adapté au marché marocain. En 3 semaines, j'ai eu 4 entretiens et j'ai été embauché chez une entreprise de Tanger. Très satisfait !",
       rating: 5,
-      avatar: "TM"
+      avatar: "YE"
     },
     {
-      name: "Sophie Bernard",
+      name: "Fatima Zahra Tazi",
       role: "UX Designer",
-      company: "DesignStudio",
-      content: "L'agent vocal est si réaliste ! J'ai pu pratiquer mes réponses sans stress et améliorer ma confiance en moi. Le feedback détaillé m'a permis d'identifier mes points d'amélioration.",
+      company: "DesignStudio Marrakech",
+      content: "L'agent vocal est incroyablement réaliste ! J'ai pu m'entraîner sans stress et améliorer ma confiance. Le feedback était détaillé et m'a permis d'identifier mes points d'amélioration.",
       rating: 5,
-      avatar: "SB"
+      avatar: "FZ"
     },
     {
-      name: "Alexandre Moreau",
+      name: "Karim Mansouri",
       role: "Data Scientist",
-      company: "DataFlow",
-      content: "NextHire m'a vraiment aidé à me préparer pour mon entretien. Les questions étaient pertinentes et le feedback constructif. Je recommande vivement !",
+      company: "DataFlow Agadir",
+      content: "NextHire m'a vraiment aidé à me préparer pour mon entretien. Les questions étaient pertinentes et le feedback constructif. Je recommande vivement à tous les candidats marocains !",
       rating: 5,
-      avatar: "AM"
+      avatar: "KM"
     }
   ]
 

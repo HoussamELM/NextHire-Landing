@@ -5,23 +5,23 @@ export function WhyChooseUsSection() {
   const features = [
     {
       icon: Mic,
-      title: "Simulation vocale réaliste",
-      description: "Notre agent vocal IA utilise la technologie Vapi pour des conversations naturelles et immersives."
+      title: "Simulation réaliste",
+      description: "Entraînez-vous avec des entretiens qui reproduisent fidèlement les conditions réelles du marché marocain."
     },
     {
       icon: Zap,
       title: "Feedback immédiat",
-      description: "Recevez des retours instantanés sur vos réponses avec des suggestions d'amélioration."
+      description: "Recevez des conseils instantanés et personnalisés pour améliorer vos réponses et votre présentation."
     },
     {
       icon: Brain,
-      title: "IA formée sur des données RH",
-      description: "Notre générateur de CV utilise Google Gemini entraîné sur des milliers de CV de recruteurs."
+      title: "CV adaptés au marché local",
+      description: "Nos modèles sont conçus pour répondre aux attentes des recruteurs marocains et internationaux."
     },
     {
       icon: Smartphone,
-      title: "Interface moderne et intuitive",
-      description: "Une expérience utilisateur fluide et responsive, accessible sur tous vos appareils."
+      title: "Interface intuitive",
+      description: "Une expérience simple et efficace, accessible depuis tous vos appareils, où que vous soyez."
     }
   ]
 

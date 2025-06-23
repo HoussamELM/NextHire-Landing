@@ -10,9 +10,9 @@ export function HeroSection() {
   }, [])
 
   const stats = [
-    { icon: Users, value: "500+", label: "Candidats formés" },
-    { icon: TrendingUp, value: "85%", label: "Taux de réussite" },
-    { icon: Award, value: "4.9/5", label: "Note utilisateurs" }
+    { icon: Users, value: "200+", label: "Candidats formés" },
+    { icon: TrendingUp, value: "78%", label: "Taux de réussite" },
+    { icon: Award, value: "4.7/5", label: "Note utilisateurs" }
   ]
 
   return (
@@ -22,19 +22,19 @@ export function HeroSection() {
           {/* Badge */}
           <div className={`inline-flex items-center rounded-full border px-3 py-1 text-sm font-medium mb-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
             <Sparkles className="mr-2 h-4 w-4 text-primary" />
-            <span className="text-gradient font-semibold">Nouveau : IA conversationnelle avancée</span>
+            <span className="text-gradient font-semibold">Nouveau : Préparation d'entretien intelligente</span>
           </div>
 
           {/* Main Heading */}
           <h1 className={`text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
             Réussissez vos entretiens.
-            <span className="block text-gradient mt-2">Obtenez le job de vos rêves.</span>
+            <span className="block text-gradient mt-2">Décrochez le job de vos rêves.</span>
           </h1>
           
           {/* Subtitle */}
           <p className={`mt-6 text-lg leading-8 text-muted-foreground sm:text-xl max-w-3xl mx-auto transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-            NextHire combine agents vocaux IA et génération de CV intelligente pour booster votre carrière. 
-            Entraînez-vous avec des simulations réalistes et créez des CV parfaits.
+            Préparez-vous efficacement aux entretiens d'embauche et créez des CV professionnels 
+            qui vous démarquent sur le marché du travail marocain.
           </p>
           
           {/* CTA Buttons */}

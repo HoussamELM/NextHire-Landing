@@ -11,12 +11,12 @@ export function ServicesSection() {
       id: "ai-job-interviewprep",
       icon: Mic,
       title: "AI Job InterviewPrep",
-      description: "Simulateur d'entretien d'embauche IA nouvelle génération",
+      description: "Préparez-vous efficacement aux entretiens d'embauche",
       features: [
-        "Simulation vocale réaliste",
+        "Simulation d'entretien réaliste",
         "Feedback en temps réel",
         "Questions adaptées au poste",
-        "Analyse de performance"
+        "Conseils personnalisés"
       ],
       color: "from-blue-500/10 to-purple-500/10",
       iconColor: "text-blue-600"
@@ -24,13 +24,13 @@ export function ServicesSection() {
     {
       id: "cv-generator",
       icon: FileText,
-      title: "Générateur de CV IA",
-      description: "Création de CV professionnels avec Google Gemini",
+      title: "Générateur de CV",
+      description: "Créez des CV professionnels adaptés au marché marocain",
       features: [
-        "IA formée sur des données RH",
-        "CV adaptés au poste ciblé",
+        "Modèles adaptés au marché local",
+        "CV personnalisés selon le poste",
         "Export PDF professionnel",
-        "Modèles personnalisables"
+        "Conseils d'amélioration"
       ],
       color: "from-green-500/10 to-teal-500/10",
       iconColor: "text-green-600"
@@ -89,8 +89,8 @@ export function ServicesSection() {
               <CardContent className="relative z-10 space-y-4">
                 <p className="text-muted-foreground">
                   {service.id === "ai-job-interviewprep" 
-                    ? "Entraînez-vous avec notre simulateur IA qui simule des entretiens d'embauche réels. Recevez un feedback immédiat et détaillé pour améliorer vos réponses."
-                    : "Créez des CV professionnels et adaptés à votre profil grâce à notre IA formée sur des données RH. Téléchargez votre CV en PDF en quelques clics."
+                    ? "Entraînez-vous avec notre simulateur qui reproduit des entretiens réels. Recevez des conseils personnalisés pour améliorer vos réponses et votre confiance."
+                    : "Créez des CV professionnels et adaptés au marché marocain. Notre outil vous guide pour mettre en valeur vos compétences et expériences."
                   }
                 </p>
                 
